@@ -4,8 +4,8 @@ This is a little implementation of my own dedicated Valheim server which is runn
 
 ## Installation
 
-1. Setting up the `Server-Data/start_server.sh` script which is the entry point inside the docker container. You have to choose a server name, a world name and if you want a password. For more info visit [https://valheim.fandom.com/wiki/Hosting_Servers](https://valheim.fandom.com/wiki/Hosting_Servers).
-2. Copy or checkout the complete directory onto the host linux system. I created a new user `valheim` on my server and I copied all files into it.
+1. Copy or checkout the complete directory onto the host linux system. I created a new user `valheim` on my server and I copied all files into the `/home/valheim/server/` directory.
+2. Setting up the `./Server-Data/start_server.sh` script which is the entry point inside the docker container. You have to choose a server name, a world name and if you want a password. For more info visit [https://valheim.fandom.com/wiki/Hosting_Servers](https://valheim.fandom.com/wiki/Hosting_Servers).
 3. Set execute permissions for `run-server.sh` and `backup-server.sh`.
 ```bash
 sudo chmod u+x run-server.sh backup-server.sh
